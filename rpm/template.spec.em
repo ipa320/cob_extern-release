@@ -1,3 +1,5 @@
+%undefine _missing_build_ids_terminate_build
+
 Name:           @(Package)
 Version:        @(Version)
 Release:        @(RPMInc)%{?dist}
