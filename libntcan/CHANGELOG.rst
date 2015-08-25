@@ -2,6 +2,16 @@
 Changelog for package libntcan
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.6.2 (2015-08-25)
+------------------
+* catkin_linting and make all build_depends depends only
+* remove mainpage.dox
+* fix trailing whitespace
+* don't use CATKIN_GLOBAL\_* in CMakeLists
+* Install Tag and catkin_package adaptations
+* migrate to package format v2
+* Contributors: ipa-mig
+
 0.6.1 (2015-05-28)
 ------------------
 
