@@ -1,0 +1,12 @@
+Source: ros-indigo-libpcan
+Section: misc
+Priority: extra
+Maintainer: Florian Weisshardt <fmw@ipa.fhg.de>
+Build-Depends: debhelper (>= 9.0.0), libpopt-dev, linux-headers-generic, ros-indigo-catkin, ros-indigo-mk, ros-indigo-rospack
+Homepage: http://p103112.typo3server.info/fileadmin/media/linux/index.htm
+Standards-Version: 3.9.2
+
+Package: ros-indigo-libpcan
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libpopt-dev, linux-headers-generic, ros-indigo-mk, ros-indigo-rospack
+Description: This package wraps the libpcan to use it as a ros dependency
