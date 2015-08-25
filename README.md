@@ -1,3 +1,28 @@
+## cob_extern (indigo) - 0.6.2-0
+
+The packages in the `cob_extern` repository were released into the `indigo` distro by running `/usr/bin/bloom-release cob_extern --track indigo --rosdistro indigo` on `Tue, 25 Aug 2015 19:37:17 -0000`
+
+These packages were released:
+- `cob_extern`
+- `libntcan`
+- `libpcan`
+- `libphidgets`
+
+Version of package(s) in repository `cob_extern`:
+- upstream repository: https://github.com/ipa320/cob_extern.git
+- release repository: https://github.com/ipa320/cob_extern-release.git
+- rosdistro version: `0.6.1-0`
+- old version: `0.6.1-0`
+- new version: `0.6.2-0`
+
+Versions of tools used:
+- bloom version: `0.5.20`
+- catkin_pkg version: `0.2.10`
+- rosdep version: `0.11.2`
+- rosdistro version: `0.4.2`
+- vcstools version: `0.1.36`
+
+
 ## cob_extern (indigo) - 0.6.1-0
 
 The packages in the `cob_extern` repository were released into the `indigo` distro by running `/usr/bin/bloom-release cob_extern --track indigo --rosdistro indigo` on `Thu, 28 May 2015 07:55:31 -0000`
