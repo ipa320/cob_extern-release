@@ -1,4 +1,4 @@
-From 99e50412c662922cf49b3d686318939b582e2da0 Mon Sep 17 00:00:00 2001
+From 238054028b306e103db56216392ca14682a5872b Mon Sep 17 00:00:00 2001
 From: Florian Weisshardt <florian.weisshardt@ipa.fraunhofer.de>
 Date: Mon, 22 Sep 2014 11:36:07 +0200
 Subject: [PATCH] Workaround for bundled binaries
