@@ -1,0 +1,13 @@
+Source: ros-indigo-cob-extern
+Section: misc
+Priority: extra
+Maintainer: Florian Weisshardt <fmw@ipa.fhg.de>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin
+Homepage: http://ros.org/wiki/cob_extern
+Standards-Version: 3.9.2
+
+Package: ros-indigo-cob-extern
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-libntcan, ros-indigo-libpcan, ros-indigo-libphidgets
+Description: The cob_extern stack contains third party libraries needed for operating Care-O-bot.
+ The packages are downloaded from the manufactorers website and not changed in any way.
