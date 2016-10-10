@@ -1,0 +1,12 @@
+Source: ros-indigo-libntcan
+Section: misc
+Priority: extra
+Maintainer: Florian Weisshardt <fmw@ipa.fhg.de>
+Build-Depends: debhelper (>= 9.0.0), dpkg, ros-indigo-catkin
+Homepage: http://www.esd-electronics.com
+Standards-Version: 3.9.2
+
+Package: ros-indigo-libntcan
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, dpkg
+Description: This package wraps the libntcan to use it as a ros dependency.
