@@ -1,4 +1,4 @@
-From 238054028b306e103db56216392ca14682a5872b Mon Sep 17 00:00:00 2001
+From b028be23bad9bb7c9fec6d8b32604db392905f1a Mon Sep 17 00:00:00 2001
 From: Florian Weisshardt <florian.weisshardt@ipa.fraunhofer.de>
 Date: Mon, 22 Sep 2014 11:36:07 +0200
 Subject: [PATCH] Workaround for bundled binaries
@@ -8,7 +8,7 @@ Subject: [PATCH] Workaround for bundled binaries
  1 file changed, 2 insertions(+)
 
 diff --git a/rpm/template.spec.em b/rpm/template.spec.em
-index 6fb5033..8926b2c 100644
+index a65a2a8..a2749a7 100644
 --- a/rpm/template.spec.em
 +++ b/rpm/template.spec.em
 @@ -1,3 +1,5 @@
