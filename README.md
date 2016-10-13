@@ -1,3 +1,33 @@
+## cob_extern (indigo) - 0.6.6-0
+
+The packages in the `cob_extern` repository were released into the `indigo` distro by running `/usr/bin/bloom-release --rosdistro indigo --track indigo cob_extern` on `Thu, 13 Oct 2016 09:31:23 -0000`
+
+These packages were released:
+- `cob_extern`
+- `libconcorde_tsp_solver`
+- `libdlib`
+- `libntcan`
+- `libopengm`
+- `libpcan`
+- `libphidgets`
+
+Version of package(s) in repository `cob_extern`:
+
+- upstream repository: https://github.com/ipa320/cob_extern.git
+- release repository: https://github.com/ipa320/cob_extern-release.git
+- rosdistro version: `0.6.5-0`
+- old version: `0.6.5-0`
+- new version: `0.6.6-0`
+
+Versions of tools used:
+
+- bloom version: `0.5.22`
+- catkin_pkg version: `0.2.10`
+- rosdep version: `0.11.5`
+- rosdistro version: `0.4.7`
+- vcstools version: `0.1.39`
+
+
 ## cob_extern (indigo) - 0.6.5-0
 
 The packages in the `cob_extern` repository were released into the `indigo` distro by running `/usr/bin/bloom-release --rosdistro indigo --track indigo cob_extern` on `Mon, 10 Oct 2016 09:27:24 -0000`
