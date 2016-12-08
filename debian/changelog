@@ -1,0 +1,93 @@
+ros-indigo-libopengm (0.6.10-0saucy) saucy; urgency=high
+
+  * manually fix changelogs
+  * Contributors: ipa-fxm
+
+ -- Richard Bormann <richard.bormann@ipa.fraunhofer.de>  Wed, 07 Dec 2016 23:00:00 -0000
+
+ros-indigo-libopengm (0.6.9-0saucy) saucy; urgency=high
+
+
+
+ -- Richard Bormann <richard.bormann@ipa.fraunhofer.de>  Sun, 23 Oct 2016 22:00:00 -0000
+
+ros-indigo-libopengm (0.6.8-0saucy) saucy; urgency=high
+
+
+
+ -- Richard Bormann <richard.bormann@ipa.fraunhofer.de>  Sun, 23 Oct 2016 22:00:00 -0000
+
+ros-indigo-libopengm (0.6.7-0saucy) saucy; urgency=high
+
+  * changed opengm-master.zip to opengm-master.tar.gz
+  * changed opengm-master.zip to opengm-master.tar.gz
+  * Contributors: ipa-nhg, ipa-rmb-fj
+
+ -- Richard Bormann <richard.bormann@ipa.fraunhofer.de>  Wed, 19 Oct 2016 22:00:00 -0000
+
+ros-indigo-libopengm (0.6.6-0saucy) saucy; urgency=high
+
+  * Merge branch 'indigo_dev' into indigo_release_candidate
+  * Update package.xml
+  * Contributors: Florian Weisshardt
+
+ -- Richard Bormann <richard.bormann@ipa.fraunhofer.de>  Wed, 12 Oct 2016 22:00:00 -0000
+
+ros-indigo-libopengm (0.6.5-0saucy) saucy; urgency=high
+
+  * fixed bug in install directives
+  * fixed package.xmls
+  * added 3 libs: concorde_tsp_solver, dlib, and opengm
+  * Contributors: Richard Bormann
+
+ -- Richard Bormann <richard.bormann@ipa.fraunhofer.de>  Sun, 09 Oct 2016 22:00:00 -0000
+
+ros-indigo-libopengm (0.6.4-0saucy) saucy; urgency=high
+
+
+
+ -- Richard Bormann <richard.bormann@ipa.fraunhofer.de>  Thu, 31 Mar 2016 22:00:00 -0000
+
+ros-indigo-libopengm (0.6.3-0saucy) saucy; urgency=high
+
+
+
+ -- Richard Bormann <richard.bormann@ipa.fraunhofer.de>  Sun, 30 Aug 2015 22:00:00 -0000
+
+ros-indigo-libopengm (0.6.2-0saucy) saucy; urgency=high
+
+
+
+ -- Richard Bormann <richard.bormann@ipa.fraunhofer.de>  Mon, 24 Aug 2015 22:00:00 -0000
+
+ros-indigo-libopengm (0.6.1-0saucy) saucy; urgency=high
+
+
+
+ -- Richard Bormann <richard.bormann@ipa.fraunhofer.de>  Wed, 27 May 2015 22:00:00 -0000
+
+ros-indigo-libopengm (0.6.0-0saucy) saucy; urgency=high
+
+
+
+ -- Richard Bormann <richard.bormann@ipa.fraunhofer.de>  Mon, 15 Sep 2014 22:00:00 -0000
+
+ros-indigo-libopengm (0.5.3-0saucy) saucy; urgency=high
+
+
+
+ -- Richard Bormann <richard.bormann@ipa.fraunhofer.de>  Sun, 24 Aug 2014 22:00:00 -0000
+
+ros-indigo-libopengm (0.5.2-0saucy) saucy; urgency=high
+
+
+
+ -- Richard Bormann <richard.bormann@ipa.fraunhofer.de>  Wed, 26 Mar 2014 23:00:00 -0000
+
+ros-indigo-libopengm (0.5.1-0saucy) saucy; urgency=high
+
+
+
+ -- Richard Bormann <richard.bormann@ipa.fraunhofer.de>  Sun, 23 Mar 2014 23:00:00 -0000
+
+
