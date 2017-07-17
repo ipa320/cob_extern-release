@@ -2,6 +2,35 @@
 Changelog for package libphidgets
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.6.11 (2017-07-17)
+-------------------
+* fix libphidgets download url
+* fix include_dirs in cmake_extras
+* use EXPORTED_TARGETS
+* final consistency
+* migrated libphidgets to catkin-native wrapping
+* Contributors: Matthias Gruhler, ipa-fxm
+
+0.6.10 (2016-12-08)
+-------------------
+* manually fix changelogs
+* Contributors: ipa-fxm
+
+0.6.9 (2016-10-24)
+------------------
+
+0.6.8 (2016-10-24)
+------------------
+
+0.6.7 (2016-10-20)
+------------------
+
+0.6.6 (2016-10-13)
+------------------
+
+0.6.5 (2016-10-10)
+------------------
+
 0.6.4 (2016-04-01)
 ------------------
 * Update header to 2015 version
@@ -24,12 +53,6 @@ Changelog for package libphidgets
 * Install Tag and catkin_package adaptations
 * migrate to package format v2
 * Contributors: ipa-mig
-
-0.6.7 (2016-10-20)
-------------------
-
-0.6.6 (2016-10-13)
-------------------
 
 0.6.1 (2015-05-28)
 ------------------

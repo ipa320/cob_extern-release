@@ -1,60 +1,36 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(libconcorde_tsp_solver)
 
-## Find catkin macros and libraries 
-## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
-## is used, also find other catkin packages
-find_package(catkin REQUIRED)
+find_package(catkin REQUIRED COMPONENTS libqsopt)
 
-#test -e ${CATKIN_DEVEL_PREFIX}/${CATKIN_GLOBAL_SHARE_DESTINATION}/${PROJECT_NAME}/INSTALLED ||
-message(STATUS "Project source dir: ${PROJECT_SOURCE_DIR}")
-add_custom_target(
-    	build_libconcorde_tsp_solver ALL
-    		COMMAND  cmake -E chdir ${PROJECT_SOURCE_DIR} make -f Makefile.tarball && touch ${CATKIN_DEVEL_PREFIX}/${CATKIN_GLOBAL_SHARE_DESTINATION}/${PROJECT_NAME}/INSTALLED
-    )
+catkin_destinations() # set-up destination variables
+file(MAKE_DIRECTORY ${CATKIN_DEVEL_PREFIX}/${CATKIN_PACKAGE_INCLUDE_DESTINATION})
 
+include(ExternalProject)
+ExternalProject_Add(EP_${PROJECT_NAME}
+    URL https://github.com/ipa320/thirdparty/raw/master/concorde-tsp-solver-20031219.tar.gz
+    URL_MD5 fba5435ca1fd01f9da081fe5232a7203
 
-set(executables "concorde_tsp_solver")
-foreach(executable ${executables})
-	add_custom_target(
-		copy_${executable} ALL
-		COMMAND ${CMAKE_COMMAND} -E copy ${PROJECT_SOURCE_DIR}/common/bin/concorde ${CATKIN_DEVEL_PREFIX}/${CATKIN_GLOBAL_LIB_DESTINATION}/${PROJECT_NAME}
-   	COMMENT "Copying ${PROJECT_SOURCE_DIR}/common/bin/concorde to ${CATKIN_DEVEL_PREFIX}/${CATKIN_GLOBAL_LIB_DESTINATION}/${PROJECT_NAME}"
-	)
-endforeach()
-
-catkin_package(
-	INCLUDE_DIRS
-#		common/include
-	LIBRARIES
-#		libconcorde_tsp_solver
-	CATKIN_DEPENDS
-	DEPENDS
+    CONFIGURE_COMMAND "./configure"
+    SOURCE_DIR ${PROJECT_BINARY_DIR}/${PROJECT_NAME}-src
+    BUILD_IN_SOURCE 1
+    BUILD_COMMAND make
+        # copy headers to devel space (catkin does not like headers in source space)
+        COMMAND ${CMAKE_COMMAND} -E copy_if_different ${PROJECT_BINARY_DIR}/${PROJECT_NAME}-src/concorde.h ${CATKIN_DEVEL_PREFIX}/${CATKIN_PACKAGE_INCLUDE_DESTINATION}
+        # copy libs, set-up soname chain
+        COMMAND ${CMAKE_COMMAND} -E copy_if_different ${PROJECT_BINARY_DIR}/${PROJECT_NAME}-src/concorde.a ${CATKIN_DEVEL_PREFIX}/${CATKIN_PACKAGE_LIB_DESTINATION}
+    INSTALL_COMMAND ""
 )
 
-#include_directories(
-#	common/include
-#)
+catkin_package(
+    CFG_EXTRAS libconcorde_tsp_solver-extras.cmake # catkin_package does not support artifacts in devel space
+    EXPORTED_TARGETS EP_${PROJECT_NAME}
+)
 
-foreach(executable ${executables})
-	add_executable(${executable} IMPORTED)
-	add_dependencies(${executable} copy_${executable})
-	add_dependencies(copy_${executable} build_libconcorde_tsp_solver)
-	set_target_properties(${executable} PROPERTIES LINKER_LANGUAGE CXX)
-endforeach()
-set_target_properties(build_libconcorde_tsp_solver PROPERTIES LINKER_LANGUAGE CXX)
+install(DIRECTORY ${CATKIN_DEVEL_PREFIX}/${CATKIN_PACKAGE_INCLUDE_DESTINATION}/
+    DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
+)
 
-
-#############
-## Install ##
-#############
-## Mark executables and/or libraries for installation
-#install(TARGETS ${executables}
-#	ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
-#	LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
-#	RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
-#)
-
-#install(DIRECTORY common/include
-#	DESTINATION ${CATKIN_GLOBAL_INCLUDE_DESTINATION}
-#)
+install(FILES ${CATKIN_DEVEL_PREFIX}/${CATKIN_PACKAGE_LIB_DESTINATION}/concorde.a
+    DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+)

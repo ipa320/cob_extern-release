@@ -2,6 +2,37 @@
 Changelog for package libpcan
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.6.11 (2017-07-17)
+-------------------
+* fix include_dirs in cmake_extras
+* use EXPORTED_TARGETS
+* final consistency
+* migrated libpcan to catkin-native wrapping
+* kernel source is not needed for building libpcan
+* update to newest peak driver version 8.3
+* Contributors: Benjamin Maidel, Mathias Lüdtke, ipa-fxm
+
+0.6.10 (2016-12-08)
+-------------------
+* update changelog
+* manually fix changelogs
+* Contributors: ipa-fxm
+
+0.6.9 (2016-10-24)
+------------------
+
+0.6.8 (2016-10-24)
+------------------
+
+0.6.7 (2016-10-20)
+------------------
+
+0.6.6 (2016-10-13)
+------------------
+
+0.6.5 (2016-10-10)
+------------------
+
 0.6.4 (2016-04-01)
 ------------------
 
@@ -19,12 +50,6 @@ Changelog for package libpcan
 * Install Tag and catkin_package adaptations
 * migrate to package format v2
 * Contributors: ipa-mig
-
-0.6.7 (2016-10-20)
-------------------
-
-0.6.6 (2016-10-13)
-------------------
 
 0.6.1 (2015-05-28)
 ------------------
