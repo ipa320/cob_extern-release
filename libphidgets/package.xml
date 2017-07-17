@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>libphidgets</name>
-  <version>0.6.10</version>
+  <version>0.6.11</version>
   <description>This package wraps the libphidgets to use it as a ros dependency</description>
 
   <license>LGPL</license>
@@ -13,8 +13,5 @@
   <buildtool_depend>catkin</buildtool_depend>
 
   <depend>libusb-dev</depend>
-  <depend>mk</depend>
-  <depend>roslib</depend>
-  <depend>rospack</depend>
 
 </package>
