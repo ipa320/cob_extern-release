@@ -1,0 +1,13 @@
+Source: ros-kinetic-cob-extern
+Section: misc
+Priority: extra
+Maintainer: Florian Weisshardt <fmw@ipa.fhg.de>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin
+Homepage: http://ros.org/wiki/cob_extern
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-cob-extern
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-libconcorde-tsp-solver, ros-kinetic-libdlib, ros-kinetic-libntcan, ros-kinetic-libpcan, ros-kinetic-libphidgets, ros-kinetic-libqsopt, ros-kinetic-opengm
+Description: The cob_extern stack contains third party libraries needed for operating Care-O-bot.
+ The packages are downloaded from the manufactorers website and not changed in any way.
