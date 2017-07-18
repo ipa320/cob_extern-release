@@ -1,0 +1,13 @@
+Source: ros-indigo-libconcorde-tsp-solver
+Section: misc
+Priority: extra
+Maintainer: Richard Bormann <richard.bormann@ipa.fraunhofer.de>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin, ros-indigo-libqsopt
+Homepage: http://www.math.uwaterloo.ca/tsp/concorde/downloads/downloads.htm
+Standards-Version: 3.9.2
+
+Package: ros-indigo-libconcorde-tsp-solver
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-libqsopt
+Description: Wrapper for the concorde traveling salesman problem solver.
+ The code was obtained from http://www.math.uwaterloo.ca/tsp/concorde/downloads/downloads.htm all rights of it go to the corresponding authors David Applegate, Robert Bixby, Vasek Chvatal and William Cook. The library doesn't give a specific license, but is provided free for academic research use, for further licensing options contact William Cook.
