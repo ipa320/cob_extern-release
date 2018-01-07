@@ -1,3 +1,34 @@
+## cob_extern (kinetic) - 0.6.12-0
+
+The packages in the `cob_extern` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release cob_extern --track kinetic --rosdistro kinetic` on `Sun, 07 Jan 2018 10:00:41 -0000`
+
+These packages were released:
+- `cob_extern`
+- `libconcorde_tsp_solver`
+- `libdlib`
+- `libntcan`
+- `libpcan`
+- `libphidgets`
+- `libqsopt`
+- `opengm`
+
+Version of package(s) in repository `cob_extern`:
+
+- upstream repository: https://github.com/ipa320/cob_extern.git
+- release repository: https://github.com/ipa320/cob_extern-release.git
+- rosdistro version: `0.6.11-0`
+- old version: `0.6.11-0`
+- new version: `0.6.12-0`
+
+Versions of tools used:
+
+- bloom version: `0.6.1`
+- catkin_pkg version: `0.3.9`
+- rosdep version: `0.11.8`
+- rosdistro version: `0.6.3`
+- vcstools version: `0.1.39`
+
+
 ## cob_extern (indigo) - 0.6.12-0
 
 The packages in the `cob_extern` repository were released into the `indigo` distro by running `/usr/bin/bloom-release cob_extern --track indigo --rosdistro indigo` on `Sun, 07 Jan 2018 09:53:06 -0000`
