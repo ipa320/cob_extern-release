@@ -1,0 +1,12 @@
+Source: ros-kinetic-libpcan
+Section: misc
+Priority: extra
+Maintainer: Florian Weisshardt <fmw@ipa.fhg.de>
+Build-Depends: debhelper (>= 9.0.0), linux-headers-3.16.0-4-all, ros-kinetic-catkin
+Homepage: http://p103112.typo3server.info/fileadmin/media/linux/index.htm
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-libpcan
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, linux-headers-3.16.0-4-all
+Description: This package wraps the libpcan to use it as a ros dependency
