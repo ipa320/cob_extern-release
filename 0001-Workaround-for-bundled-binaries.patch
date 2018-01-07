@@ -1,4 +1,4 @@
-From 0acdcdbb12054c9d647f9bc73052c91f2a31ce50 Mon Sep 17 00:00:00 2001
+From cd8731c579c810b90bbe930671deee5b31a8a8ce Mon Sep 17 00:00:00 2001
 From: Florian Weisshardt <florian.weisshardt@ipa.fraunhofer.de>
 Date: Mon, 22 Sep 2014 11:36:07 +0200
 Subject: [PATCH] Workaround for bundled binaries
@@ -18,5 +18,5 @@ index a65a2a8..a2749a7 100644
  Version:        @(Version)
  Release:        @(RPMInc)%{?dist}
 -- 
-1.9.1
+2.15.1
 
