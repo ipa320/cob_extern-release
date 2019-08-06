@@ -1,0 +1,12 @@
+Source: ros-melodic-libpcan
+Section: misc
+Priority: extra
+Maintainer: Florian Weisshardt <fmw@ipa.fhg.de>
+Build-Depends: debhelper (>= 9.0.0), linux-headers-4.9.0-3-all, ros-melodic-catkin
+Homepage: http://p103112.typo3server.info/fileadmin/media/linux/index.htm
+Standards-Version: 3.9.2
+
+Package: ros-melodic-libpcan
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, linux-headers-4.9.0-3-all
+Description: This package wraps the libpcan to use it as a ros dependency
