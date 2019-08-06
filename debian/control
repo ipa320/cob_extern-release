@@ -1,0 +1,12 @@
+Source: ros-kinetic-libphidgets
+Section: misc
+Priority: extra
+Maintainer: Benjamin Maidel <benjamin.maidel@ipa.fraunhofer.de>
+Build-Depends: debhelper (>= 9.0.0), libusb-dev, ros-kinetic-catkin
+Homepage: http://ros.org/wiki/libphidgets
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-libphidgets
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libusb-dev
+Description: This package wraps the libphidgets to use it as a ros dependency
