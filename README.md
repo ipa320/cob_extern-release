@@ -1,3 +1,32 @@
+## cob_extern (noetic) - 0.6.18-1
+
+The packages in the `cob_extern` repository were released into the `noetic` distro by running `/usr/bin/bloom-release cob_extern --rosdistro noetic` on `Fri, 29 Jul 2022 13:49:49 -0000`
+
+These packages were released:
+- `cob_extern`
+- `libdlib`
+- `libntcan`
+- `libpcan`
+- `libphidgets`
+- `opengm`
+
+Version of package(s) in repository `cob_extern`:
+
+- upstream repository: https://github.com/ipa320/cob_extern.git
+- release repository: https://github.com/ipa320/cob_extern-release.git
+- rosdistro version: `0.6.17-1`
+- old version: `0.6.17-1`
+- new version: `0.6.18-1`
+
+Versions of tools used:
+
+- bloom version: `0.11.2`
+- catkin_pkg version: `0.5.2`
+- rosdep version: `0.22.1`
+- rosdistro version: `0.9.0`
+- vcstools version: `0.1.42`
+
+
 ## cob_extern (kinetic) - 0.6.17-1
 
 The packages in the `cob_extern` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release cob_extern --rosdistro kinetic` on `Thu, 28 May 2020 14:41:29 -0000`
