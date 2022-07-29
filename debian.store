@@ -1,1 +1,1 @@
-{"trim": "", "base": "75140ff", "trimbase": "", "parent": "debian/noetic/libntcan", "previous": "c2fd23e"}
+{"base": "5cfcb102", "parent": "debian/noetic/libntcan", "previous": "84c7958b", "trim": "", "trimbase": ""}
